@@ -2,7 +2,21 @@ var models = require('../models');
 var utils = require('../test/utils');
 
 var quizDescriptorFixtures = [
-  { descriptor : utils.getSampleQuizDescriptor("First Fixture Example Quiz") },
+  { descriptor : {
+    "version" : "0.1",
+    "title" : "Number Conversions",
+    "quiz": [
+    	{
+		    "question": "binHexOctDec",
+		    "repeat": 2,
+	},
+    	{
+		    "question": "changeOfBase",
+		    "repeat": 2,
+	}
+	]
+      }
+},
   { descriptor : utils.getSampleQuizDescriptor("Second Fixture Example Quiz") },
   { descriptor : utils.getSampleQuizDescriptor("Third Fixture Example Quiz") }
 ];
