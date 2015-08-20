@@ -31,7 +31,7 @@ var quizDescriptorFixtures = [
 			    {"fromRad": 2, "toRad": 16, 
 			     "minVal": 0, "maxVal": 65535},
 			    {"fromRad": 16, "toRad": 2, 
-			     "minVal": 0, "maxVal": 65535},
+			     "minVal": 0, "maxVal": 65535}
 			]
 		    }
 	}
