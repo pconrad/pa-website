@@ -2,6 +2,7 @@ var models = require('../models');
 var utils = require('../test/utils');
 
 var quizDescriptorFixtures = [
+
   { descriptor : {
     "version" : "0.1",
     "title" : "Number Conversions",
@@ -16,9 +17,28 @@ var quizDescriptorFixtures = [
 	}
 	]
       }
-},
-  { descriptor : utils.getSampleQuizDescriptor("Second Fixture Example Quiz") },
-  { descriptor : utils.getSampleQuizDescriptor("Third Fixture Example Quiz") }
+  },
+
+  { descriptor : {
+    "version" : "0.1",
+    "title" : "Binary <-> Hex",
+    "quiz": [
+    	{
+		    "question": "binHexOctDec",
+		    "repeat": 4,
+		    "parameters": {
+			"conversions" : [
+			    {"fromRad": 2, "toRad": 16, 
+			     "minVal": 0, "maxVal": 65535},
+			    {"fromRad": 16, "toRad": 2, 
+			     "minVal": 0, "maxVal": 65535},
+			]
+		    }
+	}
+	]
+      }
+  }
+
 ];
 
 
